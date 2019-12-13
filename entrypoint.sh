@@ -1,5 +1,7 @@
 #!/bin/bash
 
+INPUT_TERRAFORM_VERSION=0.12.18
+
 function parseInputs {
   # Required inputs
   if [ "${INPUT_TERRAFORM_VERSION}" != "" ]; then
@@ -21,13 +23,13 @@ function installTerraform {
   fi
   echo "Successfully downloaded Terraform v${tfVersion}"
 
-  echo "Unzipping Terraform v${tfVersion}"
-  unzip -d /usr/local/bin /tmp/terraform_${tfVersion} &> /dev/null
-  if [ "${?}" -ne 0 ]; then
-    echo "Failed to unzip Terraform v${tfVersion}"
-    exit 1
-  fi
-  echo "Successfully unzipped Terraform v${tfVersion}"
+  # echo "Unzipping Terraform v${tfVersion}"
+  # unzip -d /usr/local/bin /tmp/terraform_${tfVersion} &> /dev/null
+  # if [ "${?}" -ne 0 ]; then
+  #   echo "Failed to unzip Terraform v${tfVersion}"
+  #   exit 1
+  # fi
+  # echo "Successfully unzipped Terraform v${tfVersion}"
 }
 
 function main {
