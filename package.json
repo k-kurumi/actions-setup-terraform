@@ -1,0 +1,19 @@
+{
+  "name": "actions-setup-terraform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exec.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/k-kurumi/actions-setup-terraform.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k-kurumi/actions-setup-terraform/issues"
+  },
+  "homepage": "https://github.com/k-kurumi/actions-setup-terraform#readme"
+}
