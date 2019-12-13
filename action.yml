@@ -9,5 +9,5 @@ inputs:
     description: 'Terraform version to install.'
     required: true
 runs:
-  using: 'bash'
-  image: './entrypoint.sh'
+  using: 'node12'
+  image: './exec.js'
