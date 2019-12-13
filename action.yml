@@ -1,0 +1,13 @@
+name: 'Terraform GitHub Actions'
+description: 'Runs Terraform commands via GitHub Actions.'
+author: 'HashiCorp, Inc. Terraform Team <terraform@hashicorp.com>'
+branding:
+  icon: 'terminal'
+  color: 'purple'
+inputs:
+  terraform_version:
+    description: 'Terraform version to install.'
+    required: true
+runs:
+  using: 'bash'
+  image: './entrypoint.sh'
